@@ -61,8 +61,8 @@ function createRandomCircle(){
     const size = getRandomNumber(10, 60)
     const color = getRandomColor()
     const {width, height} =board.getBoundingClientRect()
-    const x = getRandomNumber (0, width - size)
-    const y =getRandomNumber (0, height - size)
+    const x = getRandomNumber (10, width - size-10)
+    const y =getRandomNumber (10, height - size-10)
     circle.classList.add('circle')
     circle.style.background = color
     circle.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
